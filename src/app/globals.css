@@ -30,5 +30,5 @@
 
 
 .category-item {
-  @apply px-3 pb-2 text-[16px] font-poppins font-medium uppercase text-secondary cursor-pointer duration-300 ease-in-out hover:text-[#0198E9] relative after:content-[""] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0 after:bg-[#0198E9] after:duration-300 after:ease-in-out hover:after:h-0.5;
+  @apply px-3 pb-1 text-[16px] font-poppins font-medium uppercase text-secondary cursor-pointer duration-300 ease-in-out hover:text-[#0198E9] relative after:content-[""] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0 after:bg-[#0198E9] after:duration-300 after:ease-in-out hover:after:h-0.5;
 }
