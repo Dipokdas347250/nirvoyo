@@ -69,7 +69,7 @@ const Flash = () => {
                         </div>
                         <p className='text-[18px] font-medium font-poppins  text-secondary mt-2.5 '>Women black dress and red hat collections</p>
                         <div className="flex justify-between items-center mt-2.5">
-                        <h4 className='text-[22px] font-medium font-poppins  text-primary'>৳10500</h4>
+                        <h4 className='text-[22px] font-medium font-poppins  text-primary'>৳1000</h4>
                         <RiShoppingBasket2Line size={20} className='text-primary' />
 
                         </div>
@@ -94,7 +94,7 @@ const Flash = () => {
                         </div>
                         <p className='text-[18px] font-medium font-poppins  text-secondary mt-2.5 '>Headrest Executive Mesh Office Chair set</p>
                         <div className="flex justify-between items-center mt-2.5">
-                        <h4 className='text-[22px] font-medium font-poppins  text-primary'>৳10500</h4>
+                        <h4 className='text-[22px] font-medium font-poppins  text-primary'>৳5000</h4>
                         <RiShoppingBasket2Line size={20} className='text-primary' />
 
                         </div>
@@ -119,7 +119,7 @@ const Flash = () => {
                         </div>
                         <p className='text-[18px] font-medium font-poppins  text-secondary mt-2.5 '>Women black dress and red hat collections</p>
                         <div className="flex justify-between items-center mt-2.5">
-                        <h4 className='text-[22px] font-medium font-poppins  text-primary'>৳10500</h4>
+                        <h4 className='text-[22px] font-medium font-poppins  text-primary'>৳1000.00</h4>
                         <RiShoppingBasket2Line size={20} className='text-primary' />
 
                         </div>
