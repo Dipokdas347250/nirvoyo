@@ -67,7 +67,7 @@ const Flash = () => {
                             <IoStar className='text-[#FAC96B]' />
                             <span className='text-[14px] font-medium font-poppins  text-[#757575] '>(0)</span>
                         </div>
-                        <p className='text-[18px] font-medium font-poppins  text-secondary mt-2.5 '>Women fashion dress set</p>
+                        <p className='text-[18px] font-medium font-poppins  text-secondary mt-2.5 '>Women black dress and red hat collections</p>
                         <div className="flex justify-between items-center mt-2.5">
                         <h4 className='text-[22px] font-medium font-poppins  text-primary'>৳10500</h4>
                         <RiShoppingBasket2Line size={20} className='text-primary' />
