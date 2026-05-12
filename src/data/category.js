@@ -1,0 +1,98 @@
+    import icon01 from "../../public/images/icon01.svg"
+    import icon02 from "../../public/images/icon02.svg"
+    import icon03 from "../../public/images/icon03.svg"
+    import icon04 from "../../public/images/icon04.svg"
+    import icon05 from "../../public/images/icon05.svg"
+    import icon06 from "../../public/images/icon06.svg"
+    import icon07 from "../../public/images/icon07.svg"
+    import icon08 from "../../public/images/icon08.svg"
+    import icon09 from "../../public/images/icon09.svg"
+    import icon10 from "../../public/images/icon10.svg"
+    import icon11 from "../../public/images/icon11.svg"
+    import icon12 from "../../public/images/icon12.svg"
+    import icon13 from "../../public/images/icon13.svg"
+    import icon14 from "../../public/images/icon14.svg"
+    import icon15 from "../../public/images/icon15.svg"
+
+const Category = {
+    categories: 
+     [
+    {
+        id: 1,
+        name: "Health & Household",
+        icon: icon01
+    },
+    {
+        id: 2,
+        name: "Kids Fashion",
+        icon: icon02
+    },
+    {
+        id: 3,
+        name: "Toys",
+        icon: icon03
+    },
+    {
+        id: 4,
+        name: "Groceries",
+        icon: icon04
+    },
+    {
+        id: 5,
+        name: "Home & Lifestyle",
+        icon: icon05
+    },
+    {
+        id: 6,
+        name: "Men Fashion",
+        icon: icon06
+    },
+    {
+        id: 7,
+        name: "Women’s Fashion",
+        icon: icon07
+    },
+    {
+        id: 8,
+        name: "Stationary & Books",
+        icon: icon08
+    },
+    {
+        id: 9,
+        name: "Leather Goods",
+        icon: icon09
+    },
+    {
+        id: 10,
+        name: "Jewelleries",
+        icon: icon10
+    },
+    {
+        id: 11,
+        name: "Watches",
+        icon: icon11
+    },
+    {
+        id: 12,
+        name: "Men Fashion",
+        icon:  icon12
+    },
+    {
+        id: 13,
+        name: "Tools & Hardware",
+        icon: icon13
+    },
+    {
+        id: 14, 
+        name: "Pet Supplies",
+        icon: icon14
+    },
+    {
+        id: 15,
+        name: "Seasonal",
+        icon: icon15
+    }
+]
+}
+
+export default Category;
