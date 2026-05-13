@@ -13,6 +13,11 @@
     import icon13 from "../../public/images/icon13.svg"
     import icon14 from "../../public/images/icon14.svg"
     import icon15 from "../../public/images/icon15.svg"
+    import icon1 from "../../public/images/icon1.svg"
+    import icon2 from "../../public/images/icon2.svg"
+    import icon3 from "../../public/images/icon3.svg"
+    import icon4 from "../../public/images/icon4.svg"
+
 
 
     import pro01 from "../../public/images/pro01.png"
@@ -201,6 +206,32 @@ const Category = {
             name: "Women black dress and red hat collections",
             price: 1000,
             image: pro08
+        }
+    ],
+    Shipping:[
+        {
+            id: 1,
+            name: "FREE SHIPPING",
+            description: "Order via Campaign",
+            icon: icon1
+        },
+        {
+            id: 2,
+            name: "Best Price",
+            description: "Quality products",
+            icon: icon2
+        },
+        {
+            id: 3,
+            name: "Free Retern",
+            description: "Within 7 days returns",
+            icon: icon3
+        },
+        {
+            id: 4,
+            name: "Secure Payment",
+            description: "100% secure payment",
+            icon: icon4
         }
     ]
 }
