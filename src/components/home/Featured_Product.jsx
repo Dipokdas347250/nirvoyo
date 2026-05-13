@@ -5,6 +5,8 @@ import Image from 'next/image';
 import Category from '@/data/category'
 import { RiShoppingBasket2Line } from 'react-icons/ri';
 import { CiHeart } from 'react-icons/ci';
+import { MdKeyboardArrowDown } from "react-icons/md";
+
 
 const Featured_Product = () => {
   return (
@@ -45,6 +47,11 @@ const Featured_Product = () => {
 
                 </div>
               ))}
+            </div>
+            <div className="">
+              <button className='bg-tertiary font-medium font-poppins text-white py-2.5 px-6.5 rounded-full hover:bg-secondary transition-colors duration-300 mt-10 flex items-center gap-x-2 mx-auto cursor-pointer'>
+                Show more <MdKeyboardArrowDown size={20} className='' />
+              </button>
             </div>
           </div>
         </Container>
