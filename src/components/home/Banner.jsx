@@ -13,7 +13,7 @@ import hero02 from "../../../public/images/hero02.png"
 const Banner = () => {
     return (
         <>
-            <section className='pt-3.25 pb-12.5'>
+            <section className='pt-3.25 pb-12.5 bg-[#fafafa]'>
 
                 <Container>
                     <div className="flex justify-between items-center gap-4">

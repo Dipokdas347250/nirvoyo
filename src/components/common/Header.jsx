@@ -13,7 +13,7 @@ import Link from 'next/link';
 const Header = () => {
   return (
    <>
-   <header className='py-8' >
+   <header className='py-8 bg-[#fafafa]' >
     <Container>
         <div className="flex justify-between items-center gap-17.5">
             <div className="">

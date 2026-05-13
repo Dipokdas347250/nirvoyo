@@ -13,7 +13,7 @@ import { CiHeart  } from "react-icons/ci";
 const Flash = () => {
   return (
     <>
-    <section className='pb-12.5'>
+    <section className='pb-12.5 bg-[#fafafa]'>
         <Container>
             <div className="">
                 <div className="flex justify-between items-center ">

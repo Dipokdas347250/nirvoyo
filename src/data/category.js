@@ -14,6 +14,18 @@
     import icon14 from "../../public/images/icon14.svg"
     import icon15 from "../../public/images/icon15.svg"
 
+
+    import pro01 from "../../public/images/pro01.png"
+    import pro02 from "../../public/images/pro02.png"
+    import pro03 from "../../public/images/pro03.png"
+    import pro04 from "../../public/images/pro04.png"
+    import pro05 from "../../public/images/pro05.png"
+    import pro06 from "../../public/images/pro06.png"
+    import pro07 from "../../public/images/pro07.png"
+    import pro08 from "../../public/images/pro08.png"
+
+    
+
 const Category = {
     categories: 
      [
@@ -92,7 +104,107 @@ const Category = {
         name: "Seasonal",
         icon: icon15
     }
-]
+],
+ products: [
+        {
+            id: 1,
+            name: "Headrest Executive Mesh Office Chair set",
+            price: 10500,
+            image: pro01
+        },
+        {
+            id: 2,
+            name: "Women black dress and red hat collections",
+            price: 1000,
+            image: pro02
+        },
+        {
+            id: 3,
+            name: "Men white shirt and blue jeans collections",
+            price: 1500,
+            image: pro03
+        },
+        {
+            id: 4,
+            name: "Kids yellow t-shirt and green pants collections",
+            price: 800,
+            image: pro04
+        },
+        {
+            id: 5,
+            name: "Women black dress and red hat collections",
+            price: 1000,
+            image: pro05
+        },
+        {
+            id: 6,
+            name: "Men white shirt and blue jeans collections",
+            price: 1500,
+            image: pro06
+        },
+        {
+            id: 7,
+            name: "Kids yellow t-shirt and green pants collections",
+            price: 800,
+            image: pro07
+        },
+        {
+            id: 8,
+            name: "Women black dress and red hat collections",
+            price: 1000,
+            image: pro08
+        },
+        {
+            id: 9,
+            name: "Headrest Executive Mesh Office Chair set",
+            price: 10500,
+            image: pro01
+        },
+        {
+            id: 10,
+            name: "Women black dress and red hat collections",
+            price: 1000,
+            image: pro02
+        },
+        {
+            id: 11,
+            name: "Men white shirt and blue jeans collections",
+            price: 1500,
+            image: pro03
+        },
+        {
+            id: 12,
+            name: "Kids yellow t-shirt and green pants collections",
+            price: 800,
+            image: pro04
+        },
+        {
+            id: 13,
+            name: "Women black dress and red hat collections",
+            price: 1000,
+            image: pro05
+        },
+        {
+            id: 14,
+            name: "Men white shirt and blue jeans collections",
+            price: 1500,
+            image: pro06
+        },
+        {
+            id: 15,
+            name: "Kids yellow t-shirt and green pants collections",
+            price: 800,
+            image: pro07
+        },
+        {
+            id: 16,
+            name: "Women black dress and red hat collections",
+            price: 1000,
+            image: pro08
+        }
+    ]
 }
 
-export default Category;
+
+
+export default Category ;
