@@ -119,6 +119,20 @@ const Category_Cart = () => {
                                     ))}
                                 </div>
                             </div>
+                            <div className=" flex items-center gap-x-8.75 mt-8.25">
+                                <div className="flex items-center gap-x-4 ">
+                                    <h3 className='text-[14px] text-[#3D3D3F] font-normal font-poppins'>Quantity: </h3>
+                                    <div className="flex items-center gap-x-2 px-2.25 py-0.5 bg-[#EAEAEA]">
+                                        <button className='px-2.25 py-3 text-[16px] text-[#ACACAC] font-medium font-poppins cursor-pointer '>-</button>
+                                        <h2 className='px-2.25 py-3 bg-white text-[16px] text-secondary font-medium font-poppins'>02</h2>
+                                        <button className='px-2.25 py-3  text-[16px] text-[#ACACAC] font-medium font-poppins cursor-pointer'>+</button>
+                                    </div>
+                                </div>
+                                <div className=" flex items-center gap-x-8.75">
+                                    <button className='px-10.5 py-3 border border-tertiary rounded-[5px] text-[20px] text-secondary font-medium font-poppins duration-300 ease-in-out hover:bg-tertiary hover:text-white cursor-pointer'>Add cart</button>
+                                    <button className='px-10.5 py-3 border border-tertiary rounded-[5px] text-[20px] text-secondary font-medium font-poppins duration-300 ease-in-out hover:bg-tertiary hover:text-white cursor-pointer'>Buy Now</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </Container>
