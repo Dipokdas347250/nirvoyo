@@ -8,11 +8,12 @@ import Ld from "../../../public/images/Ld.svg"
 import ins from "../../../public/images/ins.svg"
 import con00 from "../../../public/images/con00.svg"
 import Category from '@/data/category'
+import all from "../../../public/images/all.png"
 
 const Footer = () => {
   return (
     <>
-    <footer className='pt-12 pb-12 border-b border-[#E0E0E0]'>
+    <footer className='pt-12 pb-12 border-b border-[#E0E0E0] bg-white'>
         <Container>
             <div className="flex items-start gap-x-25">
                 <div className="w-[35%]">
@@ -35,7 +36,7 @@ const Footer = () => {
                             ))}
                         </ul>
                     </div>
-                    <div className="w-42">
+                    <div className="w-50">
                         <h3 className="text-[20px] text-secondary font-medium font-poppins uppercase mb-7.5">CUSTOMER AREA</h3>
                         <ul className='flex flex-col gap-y-4 '>
                             {Category?.customerData?.map((link) => (
@@ -60,6 +61,19 @@ const Footer = () => {
             </div>
         </Container>
     </footer>
+    <section className='py-3 bg-white'>
+        <Container>
+            <div className="flex items-center justify-between">
+                <div className="">
+                    <h6 className='text-[16px] text-[#757575] font-normal font-poppins'>Projectnirvoya -   © 2021 All Rights Reserved</h6>
+                </div>
+                <div className="flex items-center gap-x-6">
+                    <h2 className='text-[28px] text-tertiary font-medium font-poppins'>Pay With</h2>
+                    <Image className=" cursor-pointer" src={all} alt="logo" width={576} height={36} />
+                </div>
+            </div>
+        </Container>
+    </section>
     </>
   )
 }
