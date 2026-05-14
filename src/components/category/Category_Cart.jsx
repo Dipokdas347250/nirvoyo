@@ -115,7 +115,7 @@ const Category_Cart = () => {
                                 <h3 className='text-[20px] text-[#333333] font-normal font-poppins'>Size</h3>
                                 <div className='flex gap-x-2'>
                                     {size.map((item)=>(
-                                        <button className='py-3.25 px-4 border border-[#EAEAEA] bg-[#ffffff] text-[14px] font-normal font-poppins text-[#6E6E6F] duration-300 ease-in-out cursor-pointer hover:bg-tertiary hover:text-white'>{item}</button>
+                                        <button key={item} className='py-3.25 px-4 border border-[#EAEAEA] bg-[#ffffff] text-[14px] font-normal font-poppins text-[#6E6E6F] duration-300 ease-in-out cursor-pointer hover:bg-tertiary hover:text-white'>{item}</button>
                                     ))}
                                 </div>
                             </div>
