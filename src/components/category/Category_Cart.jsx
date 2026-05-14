@@ -11,6 +11,7 @@ import facebook from "../../../public/images/facebook.svg"
 import what from "../../../public/images/what.svg"
 import copy00 from "../../../public/images/copy00.svg"
 import mark from "../../../public/images/mark.svg"
+import fill from "../../../public/images/fill.svg"
 import Image from 'next/image';
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 import { MdOutlineStar } from "react-icons/md";
@@ -21,6 +22,11 @@ import { IoMdHeart } from "react-icons/io";
 
 
 const Category_Cart = () => {
+
+    const size = [
+     "S","M","L","X","XL","XXL"
+    ]
+
     return (
         <>
             <section className='pt-13 pb-21 bg-[#fafafa]'>
@@ -56,7 +62,8 @@ const Category_Cart = () => {
                             </div>
                         </div>
                         <div className="w-1/2">
-                            <h3 className='text-[26px] font-medium font-poppins text-secondary'>Super Skinny Rib Trouser & Joggers for Men By Sowdagar Trouser</h3>
+                            <div className="pb-6.5 border-b border-[#E0E0E0]">
+                                <h3 className='text-[26px] font-medium font-poppins text-secondary'>Super Skinny Rib Trouser & Joggers for Men By Sowdagar Trouser</h3>
                             <div className="flex gap-x-4 mt-6">
                                 <div className="flex items-center gap-x-1">
                                     <h4 className='text-[18px] text-secondary font-poppins font-medium'>4.0</h4>
@@ -86,6 +93,31 @@ const Category_Cart = () => {
                                   <div className=" bg-linear-65 from-[#FF7A00] to-[#FFB800] text-white text-[14px] font-semibold font-poppins  px-3 py-1 rounded-sm">
                                 20%
                             </div>
+                            </div>
+                            <div className="flex items-center gap-x-6 mt-6">
+                                <h3 className='text-[16px] text-secondary font-poppins font-normal'><span className='font-semibold'>SKU:</span> 12314124124</h3>
+                                <div className="flex items-center">
+                                    <Image className=' cursor-pointer' src={fill} alt="logo" width={20} height={20} />
+                                    <span className='text-[18px] text-secondary font-poppins font-normal ml-2'>In stock</span>
+                                </div>
+                            </div>
+                            </div>
+                            <div className="">
+                                <p className='text-[18px] text-secondary font-normal font-poppins pr-10 mt-3.5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                <ul className='flex flex-col gap-y-3 mt-2 ml-10'>
+                                    <li className='text-[18px] text-secondary font-poppins font-normal list-disc'>Direct Full Array</li>
+                                    <li className='text-[18px] text-secondary font-poppins font-normal list-disc'> Quantum Dot Technology</li>
+                                    <li className='text-[18px] text-secondary font-poppins font-normal list-disc'> Ambient Mode</li>
+                                    <li className='text-[18px] text-secondary font-poppins font-normal list-disc'>  One Remote Control</li>
+                                </ul>
+                            </div>
+                            <div className="flex items-center gap-x-4 mt-8.25">
+                                <h3 className='text-[20px] text-[#333333] font-normal font-poppins'>Size</h3>
+                                <div className='flex gap-x-2'>
+                                    {size.map((item)=>(
+                                        <button className='py-3.25 px-4 border border-[#EAEAEA] bg-[#ffffff] text-[14px] font-normal font-poppins text-[#6E6E6F] duration-300 ease-in-out cursor-pointer hover:bg-tertiary hover:text-white'>{item}</button>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>
