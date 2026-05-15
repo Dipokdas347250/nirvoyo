@@ -123,6 +123,25 @@ const Producr_details = () => {
                                         
                                     ))}
                                 </div>
+
+                                <div className="mt-17.5">
+                                    <h3 className='text-[24px] text-[#383838] font-semibold font-poppins'>Add Your Review</h3>
+                                    <p className='text-[18px] text-[#A7A7A7] font-normal font-poppins mt-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. </p>
+                                    <div className="">
+                                        <div className="mt-7">
+                                        <h4 className='text-[18px] text-[#383838] font-normal font-poppins'>Name*</h4>
+                                        <input className='w-186.25 h-15 bg-[#F1F1F1] border border-[#A7A7A7] outline-none rounded-[5px] mt-4' type="name" />
+                                    </div>
+                                    <div className="mt-8">
+                                        <h4 className='text-[18px] text-[#383838] font-normal font-poppins'>Email*</h4>
+                                        <input className='w-186.25 h-15 bg-[#F1F1F1] border border-[#A7A7A7] outline-none rounded-[5px] mt-4' type="email" />
+                                    </div>
+                                    <div className="mt-8">
+                                        <h4 className='text-[18px] text-[#383838] font-normal font-poppins'>Review *</h4>
+                                        <textarea className='w-186.25 h-30 bg-[#F1F1F1] border border-[#A7A7A7] outline-none rounded-[5px] mt-4 resize-none' name="" id=""></textarea>
+                                    </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
