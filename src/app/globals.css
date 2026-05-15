@@ -38,3 +38,6 @@
 .product-list {
   @apply text-[18px] text-secondary font-normal font-lato list-disc;
 }
+.stars{
+  @apply text-[14px] text-[#3D3D3F] font-normal font-poppins;
+}
