@@ -7,7 +7,7 @@ import Image from 'next/image';
 const Producr_details = () => {
     return (
         <>
-            <section className='bg-[#fafafa]'>
+            <section className='bg-[#fafafa] pb-12.5'>
                 <Container>
                     <div className="">
                         <div className="py-5 px-12 border border-[#F1F1F1] bg-[#FCFCFC]">
@@ -94,16 +94,16 @@ const Producr_details = () => {
                             </div>
                             <h3 className='text-[24px] text-[#333333] font-medium font-lato pt-10 pb-5 px-12'>Reviews (4)</h3>
                         </div>
-                        <div className="bg-white">
+                        <div className="bg-white ">
                             <div className="pt-10 pb-17.5  px-12">
                                 <div className="flex flex-col gap-y-7.5">
                                     {Category?.reviews?.map((item) => (
                                         <div key={item.id} className="">
-                                          <div className="flex items-center gap-x-4">
-                                              <Image src={item.image} alt={item.name} />
-                                            <div className="">
-                                                <h2>{item.name}</h2>
-                                                
+                                            <div className="flex items-center gap-x-4">
+                                                <Image src={item.image} alt={item.name} />
+                                                <div className="">
+                                                    <h2>{item.name}</h2>
+
                                                     <div className="flex items-center gap-x-1 mt-2.5">
                                                         <h4 className='text-[18px] text-secondary font-poppins font-medium'>5.0</h4>
                                                         <div className="flex items-center gap-x-1 text-[#FFB800] text-[20px]">
@@ -115,12 +115,12 @@ const Producr_details = () => {
                                                         </div>
                                                         <span className='text-[18px] text-[#BABABA] font-poppins font-normal'>1 Month Ago</span>
                                                     </div>
-                                             
+
+                                                </div>
                                             </div>
-                                          </div>
-                                          <p className='text-[18px] text-[#383838] font-normal font-poppins mt-6'>{item.review}</p>
+                                            <p className='text-[18px] text-[#383838] font-normal font-poppins mt-6'>{item.review}</p>
                                         </div>
-                                        
+
                                     ))}
                                 </div>
 
@@ -129,18 +129,30 @@ const Producr_details = () => {
                                     <p className='text-[18px] text-[#A7A7A7] font-normal font-poppins mt-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. </p>
                                     <div className="">
                                         <div className="mt-7">
-                                        <h4 className='text-[18px] text-[#383838] font-normal font-poppins'>Name*</h4>
-                                        <input className='w-186.25 h-15 bg-[#F1F1F1] border border-[#A7A7A7] outline-none rounded-[5px] mt-4' type="name" />
+                                            <h4 className='text-[18px] text-[#383838] font-normal font-poppins'>Name*</h4>
+                                            <input className='w-186.25 h-15 bg-[#F1F1F1] border border-[#A7A7A7] outline-none rounded-[5px] mt-4' type="name" />
+                                        </div>
+                                        <div className="mt-8">
+                                            <h4 className='text-[18px] text-[#383838] font-normal font-poppins'>Email*</h4>
+                                            <input className='w-186.25 h-15 bg-[#F1F1F1] border border-[#A7A7A7] outline-none rounded-[5px] mt-4' type="email" />
+                                        </div>
+                                        <div className="mt-8">
+                                            <h4 className='text-[18px] text-[#383838] font-normal font-poppins'>Review *</h4>
+                                            <textarea className='w-186.25 h-30 bg-[#F1F1F1] border border-[#A7A7A7] outline-none rounded-[5px] mt-4 resize-none' name="" id=""></textarea>
+                                        </div>
                                     </div>
-                                    <div className="mt-8">
-                                        <h4 className='text-[18px] text-[#383838] font-normal font-poppins'>Email*</h4>
-                                        <input className='w-186.25 h-15 bg-[#F1F1F1] border border-[#A7A7A7] outline-none rounded-[5px] mt-4' type="email" />
+                                    <div className="flex items-center gap-x-4 my-10">
+                                        <h4 className='text-[18px] text-secondary font-poppins font-medium'>Rating</h4>
+                                        <div className="flex items-center gap-x-1 text-[#FFB800] text-[20px]">
+                                            <MdOutlineStar size={20} />
+                                            <MdOutlineStar size={20} />
+                                            <MdOutlineStar size={20} />
+                                            <MdOutlineStar size={20} />
+                                            <MdOutlineStar  size={20}/>
+                                        </div>
+                                        
                                     </div>
-                                    <div className="mt-8">
-                                        <h4 className='text-[18px] text-[#383838] font-normal font-poppins'>Review *</h4>
-                                        <textarea className='w-186.25 h-30 bg-[#F1F1F1] border border-[#A7A7A7] outline-none rounded-[5px] mt-4 resize-none' name="" id=""></textarea>
-                                    </div>
-                                    </div>
+                                     <button className='px-14.5 py-4 border bg-tertiary  border-tertiary rounded-[5px] text-[18px] text-white font-medium font-poppins duration-300 ease-in-out hover:bg-white hover:text-secondary cursor-pointer'>Submit </button>
                                 </div>
                             </div>
                         </div>
