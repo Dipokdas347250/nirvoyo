@@ -6,6 +6,7 @@ import Category from '@/data/category'
 import { RiShoppingBasket2Line } from 'react-icons/ri';
 import { CiHeart } from 'react-icons/ci';
 import { MdKeyboardArrowDown } from "react-icons/md";
+import Link from 'next/link';
 
 
 const Featured_Product = () => {
@@ -24,6 +25,7 @@ const Featured_Product = () => {
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-6 mt-4">
               {Category?.products?.map((item) => (
+                  <Link key={item.id} href="/addToCart">
                 <div key={item.id} className="p-2.25 border border-[#E0E0E0] shadow-md rounded-md cursor-pointer">
                   <div className=" relative">
                     <Image className="" src={item.image} alt={item.name} />
@@ -46,6 +48,7 @@ const Featured_Product = () => {
                   </div>
 
                 </div>
+                </Link>
               ))}
             </div>
             <div className="">

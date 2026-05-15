@@ -6,6 +6,7 @@ import image from "../../../public/images/image.png"
 import { IoStar } from "react-icons/io5";
 import { RiShoppingBasket2Line } from "react-icons/ri";
 import { CiHeart  } from "react-icons/ci";
+import Link from 'next/link';
 
 
 
@@ -25,6 +26,8 @@ const Flash = () => {
                     </div>
                 </div>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-6 mt-4 ">
+                      <Link href="/addToCart">
+                      
                     <div className="p-2.25 border border-[#E0E0E0] shadow-md rounded-md cursor-pointer">
                         <div className=" relative">
                             <Image className="" src={image} alt="Flash Deals" />
@@ -50,6 +53,8 @@ const Flash = () => {
                         </div>
 
                     </div>
+                    </Link>
+                      <Link href="/addToCart">
                     <div className="p-2.25 border border-[#E0E0E0] shadow-md rounded-md cursor-pointer">
                         <div className=" relative">
                             <Image className="" src={image} alt="Flash Deals" />
@@ -75,6 +80,8 @@ const Flash = () => {
                         </div>
 
                     </div>
+                    </Link>
+                      <Link href="/addToCart">
                     <div className="p-2.25 border border-[#E0E0E0] shadow-md rounded-md cursor-pointer">
                         <div className=" relative">
                             <Image className="" src={image} alt="Flash Deals" />
@@ -100,6 +107,8 @@ const Flash = () => {
                         </div>
 
                     </div>
+                    </Link>
+                      <Link href="/addToCart">
                     <div className="p-2.25 border border-[#E0E0E0] shadow-md rounded-md cursor-pointer">
                         <div className=" relative">
                             <Image className="" src={image} alt="Flash Deals" />
@@ -125,6 +134,7 @@ const Flash = () => {
                         </div>
 
                     </div>
+                    </Link>
                 </div>
             </div>
         </Container>
