@@ -314,6 +314,28 @@ const Category = {
             review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
 
         },
+    ],
+    fashion:[
+        {
+            id: 1,
+            man:"Men’s fashion"
+        },
+        {
+            id: 2,
+            name:"Men’s Jacket"
+        },
+        {
+            id: 3,
+            name:"Men's T-Shirts"
+        },
+        {
+            id: 4,
+            name:"Casual Shirts"
+        },
+        {
+            id: 5,
+            name:"Summer T-Shirts"
+        },
     ]
         
 

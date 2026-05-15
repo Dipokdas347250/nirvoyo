@@ -10,11 +10,21 @@ import { CiHeart } from 'react-icons/ci'
 const Product_category = () => {
     return (
         <>
-            <section className='pt-10.75 pb-12.5'>
+            <section className='pt-10.75 pb-12.5 bg-[#fafafa]'>
                 <Container>
-                    <div className="flex">
-                        <div className="w-75">
-
+                    <div className="flex items-start gap-x-13">
+                        <div className="w-75 bg-white py-6.25 px-4 ">
+                        <h3 className='text-[18px] text-[#3D3D3F] font-medium font-poppins'>Related Categories</h3>
+                        <div className="">
+                            {Category?.fashion?.map((item)=>(
+                                <div key={item.id} className="">
+                                    <h3 className='text-[16px] text-[#757575] font-normal font-poppins mb-2 '>{item.man}</h3>
+                                    <ul className='ml-2 space-x-2'>
+                                        <li className='text-[16px] text-[#757575] font-normal font-poppins duration-300 ease-in-out hover:text-tertiary cursor-pointer'>{item.name}</li>
+                                    </ul>
+                                </div>
+                            ))}
+                        </div>
                         </div>
                         <div className="">
                             <div className="flex justify-between items-center">
