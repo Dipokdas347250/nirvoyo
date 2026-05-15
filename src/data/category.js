@@ -28,6 +28,11 @@ import pro05 from "../../public/images/pro05.png"
 import pro06 from "../../public/images/pro06.png"
 import pro07 from "../../public/images/pro07.png"
 import pro08 from "../../public/images/pro08.png"
+import rev01 from "../../public/images/rev01.jpg"
+import rev02 from "../../public/images/rev02.jpg"
+import rev03 from "../../public/images/rev03.jpg"
+import rev04 from "../../public/images/rev04.jpg"
+
 
 
 
@@ -280,6 +285,36 @@ const Category = {
             name: "Shipping Information"
         }
     ],
+    reviews:[
+        {
+            id: 1,
+            name: "Vanille",
+            image: rev01,
+            review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+
+        },
+        {
+            id: 2,
+            name: "Maduin",
+            image: rev02,
+            review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+
+        },
+        {
+            id: 3,
+            name: "Samantha",
+            image: rev03,
+            review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+
+        },
+        {
+            id: 4,
+            name: "Roveria",
+            image: rev04,
+            review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+
+        },
+    ]
         
 
 }

@@ -1,6 +1,8 @@
 import React from 'react'
 import Container from '../common/Container'
 import { MdOutlineStar } from "react-icons/md";
+import Category from '@/data/category';
+import Image from 'next/image';
 
 const Producr_details = () => {
     return (
@@ -44,8 +46,8 @@ const Producr_details = () => {
 
                             </div>
                         </div>
-                        <div className="bg-white mt-7.5">
-                            <div className="pt-10 px-12 flex items-center gap-x-18.75">
+                        <div className="bg-white mt-7.5 border-b border-[#F1F1F1]">
+                            <div className="pt-10  px-12 flex items-center gap-x-18.75">
                                 <div className="">
                                     <h3 className='text-[20px] text-[#3D3D3F] font-medium font-poppins'>Customer reviews</h3>
                                     <div className="flex items-center gap-x-1 mt-3.75">
@@ -88,6 +90,38 @@ const Producr_details = () => {
                                 </div>
                                 <div className="">
                                     <button className='px-12 py-2.5 border bg-tertiary  border-tertiary rounded-[5px] text-[14px] text-white font-medium font-poppins duration-300 ease-in-out hover:bg-white hover:text-secondary cursor-pointer'>Write a Review</button>
+                                </div>
+                            </div>
+                            <h3 className='text-[24px] text-[#333333] font-medium font-lato pt-10 pb-5 px-12'>Reviews (4)</h3>
+                        </div>
+                        <div className="bg-white">
+                            <div className="pt-10 pb-17.5  px-12">
+                                <div className="flex flex-col gap-y-7.5">
+                                    {Category?.reviews?.map((item) => (
+                                        <div key={item.id} className="">
+                                          <div className="flex items-center gap-x-4">
+                                              <Image src={item.image} alt={item.name} />
+                                            <div className="">
+                                                <h2>{item.name}</h2>
+                                                
+                                                    <div className="flex items-center gap-x-1 mt-2.5">
+                                                        <h4 className='text-[18px] text-secondary font-poppins font-medium'>5.0</h4>
+                                                        <div className="flex items-center gap-x-1 text-[#FFB800] text-[20px]">
+                                                            <MdOutlineStar />
+                                                            <MdOutlineStar />
+                                                            <MdOutlineStar />
+                                                            <MdOutlineStar />
+                                                            <MdOutlineStar />
+                                                        </div>
+                                                        <span className='text-[18px] text-[#BABABA] font-poppins font-normal'>1 Month Ago</span>
+                                                    </div>
+                                             
+                                            </div>
+                                          </div>
+                                          <p className='text-[18px] text-[#383838] font-normal font-poppins mt-6'>{item.review}</p>
+                                        </div>
+                                        
+                                    ))}
                                 </div>
                             </div>
                         </div>
