@@ -1,5 +1,7 @@
 import React from 'react'
 import Container from './Container'
+import { MdKeyboardArrowRight,MdKeyboardArrowLeft  } from "react-icons/md";
+
 
 const Category_Item = () => {
   return (
@@ -8,6 +10,7 @@ const Category_Item = () => {
       <Container>
         <div className="pl-9.5 pr-3">
           <ul className='flex justify-between items-center'>
+             <MdKeyboardArrowLeft size={30}/>
               <li className='category-item '>Women's Fashion</li>
               <li className='category-item '>men's Fashion</li>
               <li className='category-item '>Kid's Fashion</li>
@@ -15,6 +18,7 @@ const Category_Item = () => {
               <li className='category-item '>Arts & Crafts</li>
               <li className='category-item '>Computer & Electronics</li>
               <li className='category-item '>Food & Grocery</li>
+               <MdKeyboardArrowRight size={30}/>
           </ul>
         </div>
       </Container>

@@ -1,4 +1,4 @@
-import { Montserrat, Poppins } from "next/font/google";
+import { Lato, Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -12,6 +12,11 @@ const montserrat = Montserrat({
   subsets: ["latin"],
   weights: ["400", "500", "600", "700"],
 });
+const lato = Lato({
+  variable: "--font-lato",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 export const metadata = {
   title: "Nirvoyo Next App",
@@ -21,7 +26,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={` ${montserrat.variable} ${poppins.variable} `}>{children}
+      <body className={` ${montserrat.variable} ${poppins.variable} ${lato.variable} `}>{children}
 
       </body>
     </html>
