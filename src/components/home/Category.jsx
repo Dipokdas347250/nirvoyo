@@ -10,7 +10,7 @@ import Link from 'next/link';
 const Category0 = () => {
   return (
     <>
-    <section className='pb-12.5 bg-[#fafafa]'>
+    <section className='pb-12.5 px-2 bg-[#fafafa]'>
         <Container>
             <div className="">
                 <h2 className="text-[26px] font-medium font-poppins  text-secondary mb-8">Category</h2>

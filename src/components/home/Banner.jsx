@@ -13,11 +13,11 @@ import hero02 from "../../../public/images/hero02.png"
 const Banner = () => {
     return (
         <>
-            <section className='pt-3.25 pb-12.5 bg-[#fafafa]'>
+            <section className='pt-3.25 pb-12.5 px-2 bg-[#fafafa]'>
 
                 <Container>
                     <div className="flex justify-between items-center gap-4">
-                        <div className="w-231.25 cursor-pointer">
+                        <div className="lg:w-231.25 w-full cursor-pointer">
                             <Swiper
                                 pagination={{
                                     dynamicBullets: true,
@@ -51,9 +51,9 @@ const Banner = () => {
 
                             </Swiper>
                         </div>
-                        <div className=" flex flex-col gap-y-7">
-                            <Image className="w-full h-full object-cover" src={hero01} alt="Hero" />
-                            <Image className="w-full h-full object-cover" src={hero02} alt="Hero" />
+                        <div className=" flex flex-col gap-y-7 ">
+                            <Image className="w-full h-full object-cover lg:block md:hidden" src={hero01} alt="Hero" />
+                            <Image className="w-full h-full object-cover lg:block md:hidden" src={hero02} alt="Hero" />
                         </div>
                     </div>
                 </Container>
