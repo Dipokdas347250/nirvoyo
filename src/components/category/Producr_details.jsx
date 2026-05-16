@@ -7,17 +7,17 @@ import Image from 'next/image';
 const Producr_details = () => {
     return (
         <>
-            <section className='bg-[#fafafa] pb-12.5'>
+            <section className='bg-[#fafafa] px-2 pb-12.5'>
                 <Container>
                     <div className="">
-                        <div className="py-5 px-12 border border-[#F1F1F1] bg-[#FCFCFC]">
+                        <div className="py-5 lg:px-12 border border-[#F1F1F1] bg-[#FCFCFC]">
                             <h3 className='text-[24px] text-tertiary font-medium font-poppins'>Producr details of LED Monitor With High Quality In The World</h3>
                         </div>
                         <div className="bg-white pb-9 border-b border-[#F1F1F1]">
-                            <div className="py-6 px-12">
+                            <div className="lg:py-6 py-3 lg:px-12 px-4">
                                 <h3 className='text-[24px] text-[#333333] font-medium font-lato'>See the best picture no matter where you sit</h3>
-                                <div className="flex mt-5  ">
-                                    <div className="w-1/2">
+                                <div className="lg:flex mt-5  ">
+                                    <div className="lg:w-1/2 w-full">
                                         <ul className='ml-5 flex flex-col gap-y-3'>
                                             <li className='product-list'>Size : M, L, XL</li>
                                             <li className='product-list'>Product Type : Jogger</li>
@@ -27,7 +27,7 @@ const Producr_details = () => {
                                             <li className='product-list'>Zip : Fly</li>
                                         </ul>
                                     </div>
-                                    <div className="w-1/2">
+                                    <div className="lg:w-1/2 w-full">
                                         <ul className='ml-5 flex flex-col gap-y-3'>
                                             <li className='product-list'>Zipper : Yes</li>
                                             <li className='product-list'>Pocket : Two front and One Back Pockets.</li>
@@ -39,7 +39,7 @@ const Producr_details = () => {
                             </div>
                         </div>
                         <div className="bg-white">
-                            <div className="py-6 px-12">
+                            <div className="lg:py-6 py-3 lg:px-12 px-4">
                                 <h3 className='text-[24px] text-[#333333] leading-9.5 font-medium font-lato'>Powerful intelligence for perfection</h3>
                                 <p className='text-[18px] text-secondary leading-9.5 font-normal font-lato mt-5.5'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
                                 <p className='text-[18px] text-secondary leading-9.5 font-normal font-lato mt-12'>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita </p>
@@ -47,7 +47,7 @@ const Producr_details = () => {
                             </div>
                         </div>
                         <div className="bg-white mt-7.5 border-b border-[#F1F1F1]">
-                            <div className="pt-10  px-12 flex items-center gap-x-18.75">
+                            <div className="pt-10  lg:px-12 px-4 lg:flex items-center gap-x-18.75">
                                 <div className="">
                                     <h3 className='text-[20px] text-[#3D3D3F] font-medium font-poppins'>Customer reviews</h3>
                                     <div className="flex items-center gap-x-1 mt-3.75">
@@ -61,7 +61,7 @@ const Producr_details = () => {
                                         <h3 className='text-[15px] text-[#3D3D3F] font-normal font-poppins'>4.6 out of 5</h3>
                                     </div>
                                 </div>
-                                <div className="flex flex-col  gap-y-2.5">
+                                <div className="flex flex-col  gap-y-2.5 lg:mt-0 mt-5">
                                     <div className="flex  items-center gap-x-2.75">
                                         <h3 className='stars'>5 Stars</h3>
                                         <div className='w-50.25 h-2 bg-[#FFB340] rounded-[5px]'></div>
@@ -88,18 +88,18 @@ const Producr_details = () => {
                                         <h4 className='stars'>4%</h4>
                                     </div>
                                 </div>
-                                <div className="">
+                                <div className="lg:mt-0 mt-5">
                                     <button className='px-12 py-2.5 border bg-tertiary  border-tertiary rounded-[5px] text-[14px] text-white font-medium font-poppins duration-300 ease-in-out hover:bg-white hover:text-secondary cursor-pointer'>Write a Review</button>
                                 </div>
                             </div>
                             <h3 className='text-[24px] text-[#333333] font-medium font-lato pt-10 pb-5 px-12'>Reviews (4)</h3>
                         </div>
                         <div className="bg-white ">
-                            <div className="pt-10 pb-17.5  px-12">
+                            <div className="pt-10 pb-17.5  lg:px-12 px-4">
                                 <div className="flex flex-col gap-y-7.5">
                                     {Category?.reviews?.map((item) => (
                                         <div key={item.id} className="">
-                                            <div className="flex items-center gap-x-4">
+                                            <div className="lg:flex items-center gap-x-4">
                                                 <Image src={item.image} alt={item.name} />
                                                 <div className="">
                                                     <h2>{item.name}</h2>
@@ -118,7 +118,7 @@ const Producr_details = () => {
 
                                                 </div>
                                             </div>
-                                            <p className='text-[18px] text-[#383838] font-normal font-poppins mt-6'>{item.review}</p>
+                                            <p className='text-[18px] text-[#383838] font-normal font-poppins lg:mt-6 mt-2'>{item.review}</p>
                                         </div>
 
                                     ))}
@@ -130,15 +130,15 @@ const Producr_details = () => {
                                     <div className="">
                                         <div className="mt-7">
                                             <h4 className='text-[18px] text-[#383838] font-normal font-poppins'>Name*</h4>
-                                            <input className='w-186.25 h-15 bg-[#F1F1F1] border border-[#A7A7A7] outline-none rounded-[5px] mt-4' type="name" />
+                                            <input className='lg:w-186.25 w-full h-15 bg-[#F1F1F1] border border-[#A7A7A7] outline-none rounded-[5px] mt-4' type="name" />
                                         </div>
                                         <div className="mt-8">
                                             <h4 className='text-[18px] text-[#383838] font-normal font-poppins'>Email*</h4>
-                                            <input className='w-186.25 h-15 bg-[#F1F1F1] border border-[#A7A7A7] outline-none rounded-[5px] mt-4' type="email" />
+                                            <input className='lg:w-186.25 w-full h-15 bg-[#F1F1F1] border border-[#A7A7A7] outline-none rounded-[5px] mt-4' type="email" />
                                         </div>
                                         <div className="mt-8">
                                             <h4 className='text-[18px] text-[#383838] font-normal font-poppins'>Review *</h4>
-                                            <textarea className='w-186.25 h-30 bg-[#F1F1F1] border border-[#A7A7A7] outline-none rounded-[5px] mt-4 resize-none' name="" id=""></textarea>
+                                            <textarea className='lg:w-186.25 w-full h-30 bg-[#F1F1F1] border border-[#A7A7A7] outline-none rounded-[5px] mt-4 resize-none' name="" id=""></textarea>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-x-4 my-10">
