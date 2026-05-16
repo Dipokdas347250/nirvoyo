@@ -273,7 +273,7 @@ const Category_Item = () => {
 
   return (
     <>
-    <nav className='pb-1 border-b border-[#E0E0E0] bg-[#fafafa]'>
+    <nav className='pb-1 border-b border-[#E0E0E0] bg-[#fafafa] lg:block hidden'>
       <Container>
         <div className="pl-9.5 pr-3">
           <ul className='flex justify-between items-center '>
