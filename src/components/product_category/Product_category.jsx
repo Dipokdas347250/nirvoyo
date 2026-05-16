@@ -19,10 +19,10 @@ const Product_category = () => {
   const ratings = [1, 2, 3, 4, 5];
     return (
         <>
-            <section className='pt-10.75 pb-12.5 bg-[#fafafa]'>
+            <section className='pt-10.75 pb-12.5 px-2 bg-[#fafafa]'>
                 <Container>
-                    <div className="flex items-start gap-x-13">
-                        <div className="w-75 bg-white">
+                    <div className="lg:flex items-start gap-x-13">
+                        <div className="lg:w-75 w-full bg-white">
                             <div className=" py-6.25 px-4 border-b border-[#F4F4F4] ">
                                 <h3 className='text-[18px] text-[#3D3D3F] font-medium font-poppins'>Related Categories</h3>
                                 <div className="">
@@ -96,9 +96,9 @@ const Product_category = () => {
                             </div>
                         </div>
                         <div className="">
-                            <div className="flex justify-between items-center">
+                            <div className="lg:flex justify-between items-center">
                                 <h3 className='text-[18px] text-[#424241]/50 font-medium font-poppins'>Showing  <span className='text-[#424241]'>20</span> of <span className='text-[#424241]'>160</span> product</h3>
-                                <div className="flex ">
+                                <div className="flex lg:mt-0 mt-4 items-center gap-x-2">
                                     <h3 className='text-[18px] text-[#424241]/50 font-normal font-poppins'>Sort by:</h3>
                                     <select className='text-[18px] text-[#424241] font-normal font-poppins' name="" id="">
                                         <option value=" Newest Items"> Newest Items</option>
@@ -107,7 +107,7 @@ const Product_category = () => {
                                     </select>
                                 </div>
                             </div>
-                            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6 mt-5.5">
+                            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 lg:gap-6 gap-3 mt-5.5">
                                 {Category?.products?.map((item) => (
                                     <Link key={item.id} href="/addToCart">
                                         <div key={item.id} className="p-2.25 border border-[#E0E0E0] shadow-md rounded-md cursor-pointer">
