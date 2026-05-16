@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from '../common/Container'
-import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowleft, IoIosArrowright, IoIosArrowForward } from "react-icons/io";
 import cate01 from "../../../public/images/cate01.png"
 import cate02 from "../../../public/images/cate02.png"
 import cate03 from "../../../public/images/cate03.png"
@@ -16,6 +16,7 @@ import Image from 'next/image';
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 import { MdOutlineStar } from "react-icons/md";
 import { IoMdHeart } from "react-icons/io";
+import { IoIosArrowBack } from "react-icons/io";
 
 
 
@@ -29,24 +30,34 @@ const Category_Cart = () => {
 
     return (
         <>
-            <section className='pt-13 pb-21 bg-[#fafafa]'>
+            <section className='pt-13 pb-21 px-2 bg-[#fafafa]'>
                 <Container>
                     <div className="flex items-center gap-x-2 mt-6">
-                        <h3 className='flex items-center gap-x-2 text-[16px] font-normal font-poppins text-[#02344F] '>Home <span><IoIosArrowForward /></span> Men’s fashion <span><IoIosArrowForward /></span> <span className='text-[#757575]'>Men's Stand Collar Leather Jacket</span> </h3>
+                        <h3 className='flex items-center gap-x-2 lg:text-[16px] text-[14px] font-normal font-poppins text-[#02344F] '>Home <span><IoIosArrowForward /></span> Men’s fashion <span><IoIosArrowForward /></span> <span className='text-[#757575]'>Men's Stand Collar Leather Jacket</span> </h3>
                     </div>
-                    <div className="flex items-start gap-x-27">
-                        <div className="w-1/2">
-                            <div className="flex items-start gap-x-10 mt-6">
+                    <div className="lg:flex items-start gap-x-27">
+                        <div className="lg:w-1/2 w-full">
+                            <div className="lg:flex items-start gap-x-10 mt-6">
                                 <div className="pt-8 px-4 bg-[#F2F2F2]">
-                                    <Image src={cate01} alt="logo" width={500} height={500} />
+                                    <Image className='w-full h-full' src={cate01} alt="logo" width={500} height={500} />
                                 </div>
-                                <div className="flex flex-col gap-y-2 items-center">
+                               <div className="hidden lg:block">
+                                 <div className="flex flex-col gap-y-2 items-center">
                                     <IoIosArrowUp className='mb-6' size={20} />
                                     <Image className='bg-[#F2F2F2]' src={cate01} alt="logo" width={92} height={92} />
                                     <Image className='bg-[#F2F2F2]' src={cate02} alt="logo" width={92} height={92} />
                                     <Image className='bg-[#F2F2F2]' src={cate03} alt="logo" width={92} height={92} />
                                     <Image className='bg-[#F2F2F2]' src={cate04} alt="logo" width={92} height={92} />
                                     <IoIosArrowDown className='mt-6' size={20} />
+                                </div>
+                               </div>
+                                <div className="flex gap-y-2 items-center justify-between mt-2 md:block lg:hidden">
+                                    <IoIosArrowBack className='' size={20} />
+                                    <Image className='bg-[#F2F2F2]' src={cate01} alt="logo" width={70} height={70} />
+                                    <Image className='bg-[#F2F2F2]' src={cate02} alt="logo" width={70} height={70} />
+                                    <Image className='bg-[#F2F2F2]' src={cate03} alt="logo" width={70} height={70} />
+                                    <Image className='bg-[#F2F2F2]' src={cate04} alt="logo" width={70} height={70} />
+                                    <IoIosArrowForward className='' size={20} />
                                 </div>
                             </div>
                             <div className="flex items-center gap-x-4 mt-11.25">
@@ -61,10 +72,10 @@ const Category_Cart = () => {
 
                             </div>
                         </div>
-                        <div className="w-1/2">
+                        <div className="lg:w-1/2 w-full lg:mt-0 mt-6">
                             <div className="pb-6.5 border-b border-[#E0E0E0]">
                                 <h3 className='text-[26px] font-medium font-poppins text-secondary'>Super Skinny Rib Trouser & Joggers for Men By Sowdagar Trouser</h3>
-                            <div className="flex gap-x-4 mt-6">
+                            <div className="lg:flex  gap-x-4 mt-6">
                                 <div className="flex items-center gap-x-1">
                                     <h4 className='text-[18px] text-secondary font-poppins font-medium'>4.0</h4>
 
@@ -77,12 +88,12 @@ const Category_Cart = () => {
                                     </div>
                                     <span className='text-[18px] text-[#BABABA] font-poppins font-normal'>(223)</span>
                                 </div>
-                                <div className="flex items-center gap-x-3 px-4.25 border-l border-r border-[#E0E0E0]">
+                                <div className="flex lg:items-center  gap-x-3 lg:px-4.25 lg:border-l lg:border-r border-[#E0E0E0] lg:mt-0 mt-4">
                                     <Image className='' src={mark} alt="logo" width={21} height={15} />
                                     <h3 className='text-[18px] text-secondary font-poppins font-normal'><span className='font-bold'>4,320 </span>Sold</h3>
 
                                 </div>
-                                <div className="flex items-center gap-x-2 cursor-pointer">
+                                <div className="flex items-center gap-x-2 cursor-pointer lg:mt-0 mt-4">
                                     <IoMdHeart size={25} className='text-[#C7C7C7]' />
                                     <h3 className='text-[18px] text-tertiary font-poppins font-bold'>Add to wishlist</h3>
                                 </div>
@@ -103,7 +114,7 @@ const Category_Cart = () => {
                             </div>
                             </div>
                             <div className="">
-                                <p className='text-[18px] text-secondary font-normal font-poppins pr-10 mt-3.5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                <p className='text-[18px] text-secondary font-normal font-poppins lg:pr-10 mt-3.5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                                 <ul className='flex flex-col gap-y-3 mt-2 ml-10'>
                                     <li className='text-[18px] text-secondary font-poppins font-normal list-disc'>Direct Full Array</li>
                                     <li className='text-[18px] text-secondary font-poppins font-normal list-disc'> Quantum Dot Technology</li>
@@ -111,7 +122,7 @@ const Category_Cart = () => {
                                     <li className='text-[18px] text-secondary font-poppins font-normal list-disc'>  One Remote Control</li>
                                 </ul>
                             </div>
-                            <div className="flex items-center gap-x-4 mt-8.25">
+                            <div className="lg:flex items-center gap-x-4 mt-8.25">
                                 <h3 className='text-[20px] text-[#333333] font-normal font-poppins'>Size</h3>
                                 <div className='flex gap-x-2'>
                                     {size.map((item)=>(
@@ -119,7 +130,7 @@ const Category_Cart = () => {
                                     ))}
                                 </div>
                             </div>
-                            <div className=" flex items-center gap-x-8.75 mt-8.25">
+                            <div className="lg:flex items-center gap-x-8.75 mt-8.25">
                                 <div className="flex items-center gap-x-4 ">
                                     <h3 className='text-[14px] text-[#3D3D3F] font-normal font-poppins'>Quantity: </h3>
                                     <div className="flex items-center gap-x-2 px-2.25 py-0.5 bg-[#EAEAEA]">
@@ -128,9 +139,9 @@ const Category_Cart = () => {
                                         <button className='px-2.25 py-3  text-[16px] text-[#ACACAC] font-medium font-poppins cursor-pointer'>+</button>
                                     </div>
                                 </div>
-                                <div className=" flex items-center gap-x-8.75">
-                                    <button className='px-10.5 py-3 border border-tertiary rounded-[5px] text-[20px] text-secondary font-medium font-poppins duration-300 ease-in-out hover:bg-tertiary hover:text-white cursor-pointer'>Add cart</button>
-                                    <button className='px-10.5 py-3 border border-tertiary rounded-[5px] text-[20px] text-secondary font-medium font-poppins duration-300 ease-in-out hover:bg-tertiary hover:text-white cursor-pointer'>Buy Now</button>
+                                <div className=" lg:flex items-center gap-x-8.75 lg:mt-0 mt-4">
+                                    <button className='px-10.5 py-3 border border-tertiary rounded-[5px] text-[20px] text-secondary font-medium font-poppins duration-300 ease-in-out hover:bg-tertiary hover:text-white cursor-pointer  lg:w-45 w-full'>Add cart</button>
+                                    <button className='px-10.5 py-3 border border-tertiary rounded-[5px] text-[20px] text-secondary font-medium font-poppins duration-300 ease-in-out hover:bg-tertiary hover:text-white cursor-pointer lg:mt-0 mt-4 lg:w-45 w-full'>Buy Now</button>
                                 </div>
                             </div>
                         </div>
