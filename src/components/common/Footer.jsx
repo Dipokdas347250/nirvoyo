@@ -13,10 +13,10 @@ import all from "../../../public/images/all.png"
 const Footer = () => {
   return (
     <>
-    <footer className='pt-12 pb-12 border-b border-[#E0E0E0] bg-white'>
+    <footer className='pt-12 pb-12 border-b lg:px-0 px-7.5 border-[#E0E0E0] bg-white'>
         <Container>
-            <div className="flex items-start gap-x-25">
-                <div className="w-[35%]">
+            <div className="lg:flex items-start gap-x-25">
+                <div className="lg:w-[35%] w-full">
                     <Image className="mb-9" src={fooeter} alt="logo" width={150} height={50} />
                     <p className="text-[18px] font-normal font-poppins text-[#757575]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <div className="flex items-center gap-x-5 mt-6.5">
@@ -26,28 +26,28 @@ const Footer = () => {
                         <Image className=" cursor-pointer" src={ins} alt="logo" width={40} height={40} />
                     </div>
                 </div>
-                <div className="w-[65%]">
-                   <div className="flex justify-between">
-                     <div className="w-30.5">
-                        <h3 className="text-[20px] text-secondary font-medium font-poppins uppercase mb-7.5">QUICK LINKS</h3>
-                        <ul className='flex flex-col gap-y-4 '>
+                <div className="lg:w-[65%] w-full">
+                   <div className="lg:flex justify-between">
+                     <div className="lg:w-30.5 w-full">
+                        <h3 className="text-[20px] text-secondary font-medium font-poppins uppercase mb-7.5  lg:mt-0 mt-7.5">QUICK LINKS</h3>
+                        <ul className='flex flex-col gap-y-4  '>
                             {Category?.quickLinks?.map((link) => (
                                 <li key={link.id} className="text-[18px] font-normal font-poppins text-[#757575]  cursor-pointer">{link.name}</li>
                             ))}
                         </ul>
                     </div>
-                    <div className="w-50">
-                        <h3 className="text-[20px] text-secondary font-medium font-poppins uppercase mb-7.5">CUSTOMER AREA</h3>
-                        <ul className='flex flex-col gap-y-4 '>
+                    <div className="lg:w-50 w-full">
+                        <h3 className="text-[20px] text-secondary font-medium font-poppins uppercase mb-7.5  lg:mt-0 mt-7.5">CUSTOMER AREA</h3>
+                        <ul className='flex flex-col gap-y-4  '>
                             {Category?.customerData?.map((link) => (
                                 <li key={link.id} className="text-[18px] font-normal font-poppins text-[#757575]  cursor-pointer">{link.name}</li>
                             ))}
                         </ul>
                     </div>
                     
-                    <div className="w-82.5">
-                         <h3 className="text-[20px] text-secondary font-medium font-poppins uppercase mb-7.5">CONTACT</h3>
-                         <p className="text-[16px] font-normal font-poppins text-[#757575]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                    <div className="lg:w-82.5 w-full">
+                         <h3 className="text-[20px] text-secondary font-medium font-poppins uppercase mb-7.5  lg:mt-0 mt-7.5">CONTACT</h3>
+                         <p className="text-[16px] font-normal font-poppins text-[#757575] ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
                          <div className="flex items-center gap-x-6.25 mt-8">
                             <Image className=" cursor-pointer" src={con00} alt="logo" width={50} height={50} />
                             <div className="">
@@ -63,12 +63,12 @@ const Footer = () => {
     </footer>
     <section className='py-3 bg-white'>
         <Container>
-            <div className="flex items-center justify-between">
+            <div className="lg:flex items-center justify-between">
                 <div className="">
-                    <h6 className='text-[16px] text-[#757575] font-normal font-poppins'>Projectnirvoya -   © 2021 All Rights Reserved</h6>
+                    <h6 className='text-[16px] text-[#757575] font-normal font-poppins lg:text-start text-center'>Projectnirvoya -   © 2021 All Rights Reserved</h6>
                 </div>
-                <div className="flex items-center gap-x-6">
-                    <h2 className='text-[28px] text-tertiary font-medium font-poppins'>Pay With</h2>
+                <div className="lg:flex items-center gap-x-6">
+                    <h2 className='text-[28px] text-tertiary font-medium font-poppins lg:text-start text-center'>Pay With</h2>
                     <Image className=" cursor-pointer" src={all} alt="logo" width={576} height={36} />
                 </div>
             </div>

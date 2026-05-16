@@ -25,7 +25,7 @@ const Flash = () => {
 
                     </div>
                 </div>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-6 mt-4 ">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 lg:gap-6 gap-1 mt-4 ">
                       <Link href="/addToCart">
                       
                     <div className="p-2.25 border border-[#E0E0E0] shadow-md rounded-md cursor-pointer">
