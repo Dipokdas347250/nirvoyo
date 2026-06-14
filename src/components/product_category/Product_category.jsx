@@ -105,6 +105,11 @@ const Product_category = () => {
                                         <option value=" Newest Items"> Newest Items</option>
                                         <option value=" Newest Items"> Newest Items</option>
                                     </select>
+                                    <select className='text-[18px] text-[#424241] font-normal font-poppins' name="" id="">
+                                        <option value=" Newest Items"> Newest Items</option>
+                                        <option value=" Newest Items"> Newest Items</option>
+                                        <option value=" Newest Items"> Newest Items</option>
+                                    </select>
                                 </div>
                             </div>
                             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 lg:gap-6 gap-3 mt-5.5">
