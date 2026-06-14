@@ -106,6 +106,14 @@ const Product_category = () => {
                                         <option value=" Newest Items"> Newest Items</option>
                                     </select>
                                 </div>
+                                <div className="flex lg:mt-0 mt-4 items-center gap-x-2">
+                                    <h3 className='text-[18px] text-[#424241]/50 font-normal font-poppins'>Sort by:</h3>
+                                    <select className='text-[18px] text-[#424241] font-normal font-poppins' name="" id="">
+                                        <option value=" Newest Items"> Newest Items</option>
+                                        <option value=" Newest Items"> Newest Items</option>
+                                        <option value=" Newest Items"> Newest Items</option>
+                                    </select>
+                                </div>
                             </div>
                             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 lg:gap-6 gap-3 mt-5.5">
                                 {Category?.products?.map((item) => (
